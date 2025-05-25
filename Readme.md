@@ -5,7 +5,6 @@
 - First time setup
 
 ```bash
-git submodule add https://github.com/pybind/pybind11
 git submodule update --init --recursive
 pip install matplotlib numpy pybind11
 pip install -e .
