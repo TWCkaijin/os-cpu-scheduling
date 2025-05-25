@@ -6,6 +6,6 @@
 *.vscode
 *build/
 *Makefile
-*__pychache__
+*__pycache__
 *.pyc
 *test*
