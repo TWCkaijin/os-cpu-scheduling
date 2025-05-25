@@ -1,5 +1,5 @@
 .DS_Store
-.CmakeCache
+*CMakeCache*
 /CMakeFiles
 *.egg-info
 *.egg
