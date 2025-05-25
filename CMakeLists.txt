@@ -13,7 +13,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/src/build")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
 
 
-add_subdirectory(pybind11)
+add_subdirectory(submodule/pybind11)
 
 
 file(GLOB MAIN_MODULE_FILES "${PROJECT_SOURCE_DIR}/src/main.cpp") # 這行指定了主要的模組檔案，例如 main.cpp
