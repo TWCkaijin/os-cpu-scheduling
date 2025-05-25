@@ -1,0 +1,11 @@
+.DS_Store
+.CmakeCache
+/CMakeFiles
+*.egg-info
+*.egg
+*.vscode
+*build/
+*Makefile
+*__pychache__
+*.pyc
+*test*
