@@ -2,6 +2,15 @@
 
 ## 1. compilation
 
+- First time setup
+
+```bash
+git submodule add https://github.com/pybind/pybind11
+git submodule update --init --recursive
+cmake .
+pip install matplotlib numpy pybind11
+```
+
 ```bash
 make # First, build the cpp code in the project
 python main.py # run the project with python controler
@@ -26,3 +35,21 @@ The result are displayed in the new window, with the following information:
   - Queue 1: Highest priority, uses RoundRobinwith time quantom=5.
   - Queue 2: Medium priority, uses Round-Robin with time quantom=10.
   - Queue 3: Lowest priority, uses Preemptive SJF.
+
+## 4. Program structure
+
+The program is structured as follows:
+
+- **main.py**: The main entry point of the program, which initializes the simulation and handles user input. Also, it illustrates the results Gantt chart in a new window.
+
+- **main.cpp** : The main C++ code that implements the CPU scheduling algorithms. It contains the process queue create si,mulation and the caller logic for each scheduling algorithm.
+
+- **custom.h**: The header file that defines the custom scheduling algorithm and its associated functions. Also contains the simulation of process queue push-in behavior.
+
+- **MLQS.h**: Contains the implementation of the MultiLevel Queue Scheduling algorithm. Also contains the simulation of process queue push-in behavior.
+
+- **RRNP.h**: Contains the implementation of the Round-Robin Non-Preemptive scheduling algorithm. Also contains the simulation of process queue push-in behavior.
+
+- **SJF.h**: Contains the implementation of the Preemptive Shortest Job First scheduling algorithm. Also contains the simulation of process queue push-in behavior.
+
+- **type.h**: Defines the main data type of the program.
