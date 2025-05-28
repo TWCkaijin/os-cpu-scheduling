@@ -63,8 +63,8 @@ vector<vector<long long>> CUSTOM(std::vector<process> process_list){
 
 py::tuple main_caller(int method){
     processes = {};
-    for(int i=0;i<40;i++){
-        srand(time(0) + i); 
+    for(int i=0;i<10;i++){
+        srand(time(0)); 
         long long r = rand();
         processes.push_back(process(i, (r%3)*5, r%22+6, rand()%3+1));
         processes[i].burst_time *= 1000*1000;
